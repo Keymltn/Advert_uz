@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advertisement</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- HEADER -->
+
+  <header class="advert__header">
+    <div class="container">
+      <nav class="advert__nav">
+        <div class="advert__logo">
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
+        <div class="advert__header-elwrapper">
+          <div class="advert__btn">
+            <button>
+              <img src="./assets/images/location.svg" alt="" />
+              <p>Toshkent</p>
+            </button>
+          </div>
+          <div class="advert__place-left">
+            <p>Joylar soni: 16 ta</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+
+  <main class="advert__main">
+    <div class="advert__dark-layer">
+
+    </div>
+    <div class="advert__main-popup" id="advert__popup">
+      <h2>Ro'yxatdan o'tish</h2>
+      <p>Bupul jonli leksiya</p>
+      <form id="popp_id" action="">
+        <input class="advert__main-name-input" name="name" type="text" autocomplete="off" required>
+        <hr class="advert__input-underline-frst">
+        </hr>
+        <label class="advert__main-name-label" for="name">Ism</label>
+        <div>
+          <img width="30px" src="./assets/images/uzb.svg" alt="Uzbekikstan flag">
+          <i class="fa-solid fa-caret-down"></i>
+          <p>+998</p>
+          <input class="advert__main-number-input" name="number" type="number" autocomplete="off" maxlength="9">
+          <hr class="advert__input-underline-second">
+        </div>
+        <button type="submit" class="advert__popup-submit" id="popup__submit">Yuborish</button>
+      </form>
+    </div>
+    <div class="advert__main-overlay" id="advert__overlay">
+      <button id="overlay_cancel">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="advert__main-infoimg">
+        <div class="advert_main-info">
+          <div class="advert_main-info-top">
+            <p>Bepul jonli leksiya</p>
+            <h1>
+              Atigi 6 oydan so‘ng IT sohasida
+              <br class="advert__br-delete2"> $500 dan pul topishni boshlang  <br class="advert__br-delete1">
+              <br class="advert__br-delete3"><button class="advert_main-btn">Noldan boshlab</button>
+            </h1>
+          </div>
+          <div class="advert__moreinfo">
+            <div class="advert__moreinfo-fist">
+              <div class="advert__moreinfo-fist-border"></div>
+              <p>
+                Qanday qilib kurs to‘lovlarini<br class="advert_media-none3" /><span
+                  class="advert__moreinfo-fist-span">ishga joylashgandan so‘ng</span> amalga oshirib IT- <br
+                  class="advert_media-none1">
+                <br class="advert_media-none2">mutaxassisi bo‘lish mumkinligini bilib olasiz
+
+              </p>
+            </div>
+            <div class="advert__moreinfo-second">
+              <div class="advert__moreinfo-second-border"></div>
+              <p>2024-yildagi eng asosiy IT trendlari</p>
+            </div>
+            <div class="advert__moreinfo-third">
+              <div class="advert__moreinfo-third-border"></div>
+              <p>
+                <span class="advert__moreinfo-third-span">Onlayn ishlab</span><br class="advert_media-none4" /> bir
+                loyiha uchun $300 daromad olish <br class="advert_media-none5" />
+              </p>
+            </div>
+          </div>
+          <div class="advert__leader-registration-cover">
+            <button class="advert__leader-registration">
+              Ro'yxatdan o'tish
+            </button>
+          </div>
+        </div>
+
+        <div class="advert__leader">
+          <img class="advert__leader-img" src="./assets/images/leader.png" alt="Bobir Akilkhanov" />
+          <button class="advert__leader-registration-clone">
+            Ro'yxatdan o'tish
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
