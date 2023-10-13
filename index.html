@@ -12,6 +12,10 @@
 </head>
 
 <body>
+  <!-- TOP POPUP -->
+  
+
+
   <!-- HEADER -->
 
   <header class="advert__header">
@@ -22,10 +26,10 @@
         </div>
         <div class="advert__header-elwrapper">
           <div class="advert__btn">
-            <button>
-              <img src="./assets/images/location.svg" alt="" />
-              <p>Toshkent</p>
-            </button>
+            <span class="advert__btn-span">
+              <img src="./assets/images/location.svg" alt="Location">
+              <p class="advert__btn-location">Toshkent</p>
+            </span>
           </div>
           <div class="advert__place-left">
             <p>Joylar soni: 16 ta</p>
@@ -45,13 +49,10 @@
       <h2>Ro'yxatdan o'tish</h2>
       <p>Bupul jonli leksiya</p>
       <form id="popp_id" action="">
-        <input class="advert__main-name-input" name="name" type="text" autocomplete="off" required>
+        <input class="advert__main-name-input" name="name" type="text" autocomplete="off" placeholder="Ism">
         <hr class="advert__input-underline-frst">
         </hr>
-        <label class="advert__main-name-label" for="name">Ism</label>
         <div>
-          <img width="30px" src="./assets/images/uzb.svg" alt="Uzbekikstan flag">
-          <i class="fa-solid fa-caret-down"></i>
           <p>+998</p>
           <input class="advert__main-number-input" name="number" type="number" autocomplete="off" maxlength="9">
           <hr class="advert__input-underline-second">
@@ -71,20 +72,20 @@
           <div class="advert_main-info-top">
             <p>Bepul jonli leksiya</p>
             <h1>
-              Atigi 6 oydan so‘ng IT sohasida
-              <br class="advert__br-delete2"> $500 dan pul topishni boshlang <br class="advert__br-delete1">
-              <br class="advert__br-delete3"><button class="advert_main-btn">Noldan boshlab</button>
+              <span class="advert_main-info-span">Atigi 6 oydan so‘ng IT sohasida</span>
+              <br class="advert__br-delete2"><span class="advert_main-info-span2">$500 dan pul topishni boshlang </span> <br class="advert__br-delete1">
+              <br class="advert__br-delete3">
+              <span class="advert_main-info-top-span">Noldan boshlab</span>
             </h1>
           </div>
           <div class="advert__moreinfo">
             <div class="advert__moreinfo-fist">
               <div class="advert__moreinfo-fist-border"></div>
               <p>
-                Qanday qilib kurs to‘lovlarini<br class="advert_media-none3" /><span
-                  class="advert__moreinfo-fist-span">ishga joylashgandan so‘ng</span> amalga oshirib IT- <br
+                Qanday qilib kurs to‘lovlarini<br class="advert_media-none3" />
+                <span class="advert__moreinfo-fist-span">ishga joylashgandan so‘ng</span> amalga oshirib IT- <br
                   class="advert_media-none1">
                 <br class="advert_media-none2">mutaxassisi bo‘lish mumkinligini bilib olasiz
-
               </p>
             </div>
             <div class="advert__moreinfo-second">
@@ -107,10 +108,7 @@
         </div>
 
         <div class="advert__leader">
-          <img class="advert__leader-img" src="./assets/images/leader.png" alt="Bobir Akilkhanov" />
-          <button class="advert__leader-registration-clone">
-            Ro'yxatdan o'tish
-          </button>
+          <img class="advert__leader-img" src="./assets/images/bobur-lead.png" alt="Bobir Akilkhanov" />
         </div>
       </div>
     </div>
