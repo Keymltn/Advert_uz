@@ -13,7 +13,7 @@
 
 <body>
   <!-- TOP POPUP -->
-  
+
 
 
   <!-- HEADER -->
@@ -32,7 +32,7 @@
             </span>
           </div>
           <div class="advert__place-left">
-            <p>Joylar soni: 16 ta</p>
+            <p class="advert__place-left-p">Joylar soni: 16 ta</p>
           </div>
         </div>
       </nav>
@@ -49,12 +49,14 @@
       <h2>Ro'yxatdan o'tish</h2>
       <p>Bupul jonli leksiya</p>
       <form id="popp_id" action="">
-        <input class="advert__main-name-input" name="name" type="text" autocomplete="off" placeholder="Ism">
+        <input class="advert__main-name-input" name="name" type="text" autocomplete="off" placeholder="Ism"
+          maxlength="20" pattern="[a-zA-Z]*">
         <hr class="advert__input-underline-frst">
         </hr>
         <div>
           <p>+998</p>
-          <input class="advert__main-number-input" name="number" type="number" autocomplete="off" maxlength="9">
+          <input class="advert__main-number-input" name="number" type="number" autocomplete="off"
+            pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==9) return false;">
           <hr class="advert__input-underline-second">
         </div>
         <button type="submit" class="advert__popup-submit" id="popup__submit">Yuborish</button>
@@ -66,14 +68,35 @@
       </button>
     </div>
 
+    <div class="advert__main-top-popup-first">
+      <img
+        src="https://media.licdn.com/dms/image/C4D03AQFGaqObfXDdzA/profile-displayphoto-shrink_800_800/0/1621149049686?e=2147483647&v=beta&t=AmKqDkNkfZ5AR7HUrOQqcnVsCXmHgUTpsnmZuQl5ISY"
+        alt="Xasan photo">
+      <div>
+        <h3>Xasan</h3>
+        <p>Hoziroq leksiyaga ro'yxatdan o'tdi</p>
+      </div>
+    </div>
+
+    <div class="advert__main-top-popup-second">
+      <img
+        src="https://media.licdn.com/dms/image/C5603AQGhAa7-42-oZQ/profile-displayphoto-shrink_800_800/0/1661317582901?e=2147483647&v=beta&t=a32KqEJwXC9MfKsSNAVzu9pCx0w8Om4jc7k1ejnCqXc"
+        alt="Ali photo">
+      <div>
+        <h3>Ali</h3>
+        <p>Hoziroq leksiyaga ro'yxatdan o'tdi</p>
+      </div>
+    </div>
+
     <div class="container">
       <div class="advert__main-infoimg">
         <div class="advert_main-info">
           <div class="advert_main-info-top">
             <p>Bepul jonli leksiya</p>
             <h1>
-              <span class="advert_main-info-span">Atigi 6 oydan so‘ng IT sohasida</span>
-              <br class="advert__br-delete2"><span class="advert_main-info-span2">$500 dan pul topishni boshlang </span> <br class="advert__br-delete1">
+              <span class="advert_main-info-span">Atigi 6 oydan so‘ng IT <br class="advert_media-br"> sohasida</span>
+              <br class="advert__br-delete2"><span class="advert_main-info-span2">$500 dan pul <br
+                  class="advert_media-br"> topishni boshlang </span> <br class="advert__br-delete1">
               <br class="advert__br-delete3">
               <span class="advert_main-info-top-span">Noldan boshlab</span>
             </h1>
